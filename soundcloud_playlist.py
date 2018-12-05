@@ -19,6 +19,7 @@ class Playlist(object):
                                                                                                         "//button[@class='signinInitialStep_fbButton signinForm__cta sc-button sc-button-large sc-button-facebook']"))).click()
         except Exception:
             pass
+    #going to first track and adding him to ur playlist
     def go_to_song(self):
         try:
             self.driver.get(self.st_trk)
@@ -44,7 +45,7 @@ class Playlist(object):
             self.st_trk = elem2[0].get_attribute("href")
         except Exception:
             pass
-
+     #going to other "randomly" choosen tracks and adding them to ur playlist till all of proposed track are in ur playlist ;p
     def next_songs(self):
         try:
             while True:
