@@ -72,7 +72,7 @@ class Playlist(object):
                     self.st_trk = elem2[randint(0, 2)].get_attribute("href")
                     for i in range(0, len(self.links)):
                         if self.st_trk == self.links[i]:
-                            print("jest")
+                            print("is in playlist")
                             check = 0
                 self.links.append(self.st_trk)
         except Exception:
